@@ -20,7 +20,7 @@ services:
     testing_3:
         image: dan_test
         ports:
-            - 100:1000
+            - 130:1000
         env_file:
             - ./second.env
         
