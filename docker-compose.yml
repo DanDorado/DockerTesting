@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+
+    testing:
+        image: dan_test
+        ports:
+            - 1000:1000
+        environment:
+            - USER=test
+            - PASSWORD=12345
+
+    testing_2:
+        image: dan_test
+        ports:
+            - 100:1000
+        env_file:
+            - ./.env
+
+    testing_3:
+        image: dan_test
+        ports:
+            - 100:1000
+        env_file:
+            - ./second.env
+        
+
