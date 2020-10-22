@@ -22,5 +22,12 @@ services:
             - 130:1000
         env_file:
             - ./second.env
+
+    testing_4:
+        image: dan_test
+        ports:
+            - 140:1000
+        env_file:
+            - ./second.env
         
 
