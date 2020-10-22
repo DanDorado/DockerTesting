@@ -6,9 +6,6 @@ services:
         image: dan_test
         ports:
             - 1000:1000
-        environment:
-            - USER=test
-            - PASSWORD=12345
 
     testing_2:
         image: dan_test
