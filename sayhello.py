@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    user = os.getenv["USER"]
+    user = os.getenv["$USER"]
     return("Hello, folks. My random number is " +
     str(random_number(1000)) + ". \nThe username pulled from .env is " + str(user) + ".\n")
 
