@@ -8,7 +8,7 @@ app = Flask(__name__)
 def hello_world():
     user = os.environ["USER"]
     return("Hello, folks. My random number is " +
-    str(random_number(1000)) + ". \n\n\n The username pulled from .env is " + str(user))
+    str(random_number(1000)) + ". \nThe username pulled from .env is " + str(user) + ".\n")
 
 def random_number(max):
     return(random.randint(100,max))
