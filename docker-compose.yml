@@ -6,8 +6,6 @@ services:
         image: dan_test
         ports:
             - 2000:1000
-        env_file:
-            - ./.env
 
     testing_2:
         image: dan_test
