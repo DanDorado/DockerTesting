@@ -7,8 +7,9 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     user = os.getenv["USER"]
+    atest = os.getenv["ATEST"]
     return("Hello, folks. My random number is " +
-    str(random_number(1000)) + ". \nThe username pulled from .env is " + str(user) + ".\n")
+    str(random_number(1000)) + ". \nThe username pulled from .env is " + str(user) + ".\n A test is " + str(atest) + ".\n")
 
 def random_number(max):
     return(random.randint(100,max))
