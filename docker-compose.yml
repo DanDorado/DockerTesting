@@ -3,7 +3,7 @@ version: "3.8"
 services:
 
     testing:
-        image: dan_test
+        image: danjoyce/dan_test
         ports:
             - 2000:1000
         environment:
@@ -11,21 +11,21 @@ services:
         - PASSWORD=12345
 
     testing_2:
-        image: dan_test
+        image: danjoyce/dan_test
         ports:
             - 100:1000
         env_file:
             - ./.env
 
     testing_3:
-        image: dan_test
+        image: danjoyce/dan_test
         ports:
             - 130:1000
         env_file:
             - ./second.env
 
     testing_4:
-        image: dan_test
+        image: danjoyce/dan_test
         ports:
             - 140:1000
         env_file:
