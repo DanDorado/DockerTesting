@@ -29,7 +29,7 @@ services:
         image: danjoyce/dan_test
         ports:
             - 1040:1000
-        env_file:
+        environment:
             - USER=ExplicitlySet
             - ATEST=ExplicitTest
         
