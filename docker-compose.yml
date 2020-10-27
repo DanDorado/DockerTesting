@@ -3,7 +3,7 @@ version: "3.8"
 services:
 
     testing:
-        image: danjoyce/realtest
+        image: danjoyce/dan_test:safe
         ports:
             - 1010:1000
         environment:
@@ -12,21 +12,21 @@ services:
         - PASSWORD=12345
 
     testing_2:
-        image: danjoyce/realtest
+        image: danjoyce/dan_test:safe
         ports:
             - 1020:1000
         env_file:
             - ./.env
 
     testing_3:
-        image: danjoyce/realtest
+        image: danjoyce/dan_test:safe
         ports:
             - 1030:1000
         env_file:
             - ./second.env
 
     testing_4:
-        image: danjoyce/realtest
+        image: danjoyce/dan_test:safe
         ports:
             - 1040:1000
         environment:
